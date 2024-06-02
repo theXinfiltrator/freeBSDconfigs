@@ -1,0 +1,19 @@
+# Decrease backlight
+"backlight -f /dev/backlight/backlight0 decr 10"
+  m:0x0 + c:95
+
+# Increase backlight
+"backlight -f /dev/backlight/backlight0 incr 10"
+  m:0x0 + c:96
+
+# Increase volume
+"mixer -f /dev/mixer0 vol.volume=+0.1"
+  m:0x0 + c:69
+
+# Decrease volume
+"mixer -f /dev/mixer0 vol.volume=-0.1"
+  m:0x0 + c:68
+
+# Mute volume
+"mixer vol.mute=^"
+  m:0x0 + c:67
